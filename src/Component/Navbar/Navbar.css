@@ -1,0 +1,17 @@
+.navLi:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.btn{
+    position:absolute;
+    background-color: orange;
+    top:38%;
+    font-size: 23px;
+}
+.leftBtn{
+left:23px;
+}
+.rightBtn{
+right:23px;
+}
