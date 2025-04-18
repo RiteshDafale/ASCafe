@@ -12,7 +12,7 @@ function App() {
       {/* <Slider/> */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/ASCafe" element={<Home/>}></Route>
           {/* <Route path="/slider" element={<Slider/>}></Route> */}
         </Routes>
       </BrowserRouter>
