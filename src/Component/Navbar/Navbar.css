@@ -1,0 +1,25 @@
+.navLi:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.btn {
+    position: absolute;
+    background-color: orange;
+    top: 38%;
+    font-size: 23px;
+}
+
+.leftBtn {
+    left: 23px;
+}
+
+.rightBtn {
+    right: 23px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navul{
+        background-color:transparent;
+    }
+}
