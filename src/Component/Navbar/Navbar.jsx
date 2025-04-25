@@ -4,6 +4,8 @@ import Second from "D:/Startup/CafeWebsite/Client2/ASCafe/src/assets/images/Magg
 import Third from "D:/Startup/CafeWebsite/Client2/ASCafe/src/assets/images/Momos.jpeg";
 import forth from "D:/Startup/CafeWebsite/Client2/ASCafe/src/assets/images/cafe.jpg";
 import "../Navbar/Navbar.css";
+import { useNavigate ,Link} from "react-router-dom";
+
 function Navbar() {
   const photos = [
     {
@@ -28,6 +30,7 @@ function Navbar() {
     },
   ];
   
+  const navigate = useNavigate();
   const [id, setid] = useState(0);
   console.log(`${photos[id].url}`);
   
@@ -41,14 +44,13 @@ function Navbar() {
     backgroundRepeat: "no-repeat",
     padding: "1rem",
     height: "100vh",
-    width: "100vw",
     objectFit: "cover",
   };
 
   return (
     <div>
       <button
-        className="leftBtn btn"
+        className="leftBtn arrowbtn"
         onClick={() => {
           if (id < photos.length - 1) {
             setid(id + 1);
@@ -58,7 +60,7 @@ function Navbar() {
         }}
       > {"<"}</button>
       <button
-        className="rightBtn btn"
+        className="rightBtn arrowbtn"
         onClick={() => {
           if (id != 0) {
             setid(id - 1);
@@ -78,9 +80,9 @@ function Navbar() {
             </button>
             <div
               className="collapse navbar-collapse m-auto"
-              id="navbarSupportedContent"
+              id="navbarSupportedContent "
             >
-              <ul className="navbar-nav me-auto mb-2  m-auto bg-dark px-4 navul">
+              <ul className="navbar-nav me-auto mb-2  m-auto  px-4 navul">
                 <li className="nav-item">
                   <a
                     className="nav-link text-warning navLi fs-4"
@@ -90,25 +92,18 @@ function Navbar() {
                     Home
                   </a>
                 </li>
-                <li className="nav-item px-2">
-                  <a className="nav-link text-warning navLi fs-4" href="#">
-                    Today's_Special
-                  </a>
+                <li className="nav-item px-2"   href="#">
+                     <Link to="/Specialoffer" className="nav-link text-warning navLi fs-4">Today's_Special</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-warning navLi fs-4" href="#">
-                    Menu
-                  </a>
+                <Link to="/menu" className="nav-link text-warning navLi fs-4">Menu</Link>
                 </li>
                 <li className="nav-item px-2">
-                  <a className="nav-link text-warning navLi fs-4" href="#">
-                    Gallery
-                  </a>
+                <Link to="/gallery" className="nav-link text-warning navLi fs-4">Gallery</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-warning navLi fs-4" href="#">
-                    About
-                  </a>
+                <Link to="/about" className="nav-link text-warning navLi fs-4">About</Link>
+
                 </li>
               </ul>
             </div>

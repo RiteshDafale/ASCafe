@@ -1,0 +1,23 @@
+.blur-bg {
+    background-color: rgba(108, 117, 125, 0.5); /* Bootstrap's bg-secondary with transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .formLayout{
+    width:50%;
+  }
+ .forminput{
+    width:75%;    
+  }
+  @media only screen and (max-width: 600px) {
+    .formLayout{
+      width:100%;
+    }
+    .forminput{
+      width:100%;    
+    }
+    
+  }

@@ -14,7 +14,7 @@ button{
     right:56px;
 }
 img{
-    width: 100%;
+    width: 90%;
     object-fit: contain;
     background-size: cover;
 }

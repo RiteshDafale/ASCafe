@@ -1,13 +1,18 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
 import '../Home/Home.css';
+import Testimonial from '../Testimonial/Testimonial';
+import second from '../HomepagVideo/second';
 import Video from '../HomepagVideo/Video';
+import Contact from '../Contact/Contact';
+
 
 function Home() {
   return (
-    <div>
-     <Navbar/>
-     <Video/>
+    <div className='bg-danger' style={{ width: "" }}>
+      {/* <Navbar/> */}
+      <Video />
+      <Testimonial />
+      <Contact />
     </div>
   )
 }
